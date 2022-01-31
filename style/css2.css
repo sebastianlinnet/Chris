@@ -125,7 +125,7 @@ a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-height: 50vh;
+    height: 50vh;
     min-width: 40vw;
     background: rgba(0, 0, 0, 0.6);
     top: 25vh;    
