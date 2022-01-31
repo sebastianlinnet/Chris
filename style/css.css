@@ -125,7 +125,7 @@ a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    max-height: 50vh;
     min-width: 40vw;
     background: rgba(0, 0, 0, 0.6);
     top: 25vh;    
@@ -141,7 +141,6 @@ a:hover {
 
     #header-div {
         position: static;
-        height: 15vh;
         padding: 2em;
         margin-top: auto;
         margin-bottom: auto;
