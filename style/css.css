@@ -299,7 +299,9 @@ a:hover {
 
 .clients-slide {
     margin: 10px;
+    text-align: center;
 }
+
 
 .client-pics {
     max-height: 100%;
@@ -341,4 +343,3 @@ a:hover {
         max-height: 50vh;
     }
 }
-    

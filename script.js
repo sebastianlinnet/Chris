@@ -26,7 +26,7 @@ faders.forEach(fade => {
 
 //clients carousell
 $('.clients-carousel').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
