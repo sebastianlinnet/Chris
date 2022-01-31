@@ -1,0 +1,169 @@
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color:snow;
+}
+/* header og nav */
+.navbar-brand {
+  color: #212529 !important;
+}
+
+.nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* transition: all 0.2s ease; */
+}
+
+.nav-link {
+  color: #212529 !important;
+}
+
+.nav-item:hover {
+  box-shadow: 0 0 0 1px rgb(0, 0, 0);
+}
+
+.header-carousel {
+    height: 80vh;
+    background-image: url(https://www.sheffieldav.com/sites/default/files/Best-Audio-Engineering-Schools.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    opacity: 0.8;
+    box-shadow: 0 0 50px 0px rgb(187, 187, 187);
+}
+
+/* collapse ikoner */
+
+.col-sm {
+    text-align: center;
+    margin: 2em;
+    border-radius: 20px;
+}
+
+/* .row {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+} */
+
+button:active,
+button:focus { 
+    outline-style: none; 
+}
+.icons {
+    max-width: 70%;
+}
+
+.collapsible-icon {
+  background: none;
+  color: #212529;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  /* transition: all 0.5s ease; */
+  }
+
+  .collapsible-icon:hover {
+    box-shadow: 0 0 0 1px #212529;
+    outline: none;
+  }
+  
+  .icon-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 10px;
+  }
+
+  /* info bokse */
+  .center-p {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+
+  .col-sm-5, .col-sm-7 {
+    height: auto; 
+  }
+
+  .info-pics {
+    width: 100%;
+    height: auto;
+    opacity: 0.85;
+    object-fit: fit;
+    border-radius: 3px;
+    box-shadow: 0 0 30px 0px rgb(187, 187, 187);
+  }
+
+  .headings {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .col-lg {
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .info-content {
+    text-align: center;
+  }
+
+
+/* contact */ 
+
+
+
+#contactbuttons{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 500px){
+  #contactbuttons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.fa-facebook-official:hover {
+  color: #212529 !important;
+}
+
+.fa-instagram:hover {
+  color: #212529 !important;
+}
+
+.fa-envelope:hover{
+  color: #212529 !important;
+}
+  /* media */
+
+  @media only screen and (max-width: 800px){
+    .center-p{
+      position: initial;
+      top: initial;
+      -ms-transform: initial;
+      transform: initial;
+      }
+      .col-lg {
+        min-height: initial;
+      }
+
+      iframe {
+        width: initial;
+      }
+  }
+
+  @media only screen and (max-width: 500px){
+    .center-p{
+      margin-top: 1rem;
+      position: initial;
+      top: initial;
+      -ms-transform: initial;
+      transform: initial;
+      }
+  }

@@ -1,0 +1,345 @@
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFDFA;
+    font-weight: 400;
+}
+
+#underline {
+    letter-spacing: 10px;
+}
+
+p {
+    color: #FFFDFA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.fas, .fab {
+    color: #FFFDFA;
+    margin: 10px;
+    transition: ease-in-out 200ms;
+}
+
+.fab:hover {
+    opacity: 0.6;
+}
+
+a {
+    color: #FFFDFA;
+    text-decoration: none;
+    transition: ease-in-out 200ms;
+}
+
+a:hover {
+    opacity: 0.6;
+    color: #bdbdbd;
+}
+
+/* fade in stuff */
+.fade-in {
+    opacity: 0;
+    transition: opacity 700ms ease-in;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-30%);
+}
+
+.from-right {
+    transform: translateX(30%);
+}
+
+.from-left, .from-right {
+    transition: opacity 600ms ease-in, transform 600ms ease-in;
+    opacity: 0;
+}
+
+.from-left.show, .from-right.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* general */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+@media only screen and (max-width: 990px) {
+    .section{
+    min-height: 50vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 3vh;
+    }
+}
+
+.section-header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background:rgb(14, 14, 19);
+}
+
+@media only screen and (max-width: 990px) {
+    .section-header{
+    height: 10vh;
+    }
+}
+
+.opacity {
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* header */
+#header.section {
+    background-image: url("../imgs/header1.jpg");
+    background-position-y: 45%;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    box-shadow: inset 0px -30px 100px 100px rgb(0, 0, 0);
+}
+
+#header-div {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 50vh;
+    min-width: 40vw;
+    background: rgba(0, 0, 0, 0.6);
+    top: 25vh;    
+    right: 5vw;
+    border-radius: 5px;
+    padding: 10vh;
+}
+
+@media only screen and (max-width: 990px) {
+    #header.section {
+        max-height: 50vh;
+    }
+
+    #header-div {
+        position: static;
+        height: 15vh;
+        padding: 2em;
+        margin-top: auto;
+        margin-bottom: auto;
+        /* top: initial;
+        right: initial; */
+    }
+}
+
+
+/* Services section */
+#touring-div1 {
+    position: absolute;
+    height: 80vh;
+    width: 40vw;
+    background-image:url("../imgs/pic1.jpg");
+    background-size: cover;
+    left: 5vw;
+    border-radius: 5px;
+}
+
+#touring-div2 {
+    position: relative;
+    width: 60vw;
+    min-height: 40vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 20vh;
+    left: 15vw;
+    border-radius: 5px;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+#recording-div1 {
+    position: absolute;
+    height: 80vh;
+    width: 40vw;
+    background-image:url("../imgs/recording.jpg");
+    background-position-y: 25%;
+    background-size: cover;
+    right: 5vw;
+    border-radius: 5px;
+}
+
+#recording-div2 {
+    position: relative;
+    width: 60vw;
+    min-height: 40vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 20vh;
+    right: 15vw;
+    border-radius: 5px;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+#mixing-div1 {
+    position: absolute;
+    height: 80vh;
+    width: 40vw;
+    background-image:url("../imgs/mixing.jpg");
+    background-size: cover;
+    left: 5vw;
+    border-radius: 5px;
+}
+
+#mixing-div2 {
+    position: relative;
+    width: 60vw;
+    min-height: 40vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 20vh;
+    left: 15vw;
+    border-radius: 5px;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 990px) {
+    #touring-div1 {
+        position: static;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    #touring-div2 {
+        position: static;
+        top: initial;
+        left: initial;
+        width: 100%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-top: 1vh;
+    }
+
+    #recording-div1 {
+        position: static;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    #recording-div2 {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        margin-top: 2vh;
+    }
+
+    #mixing-div1 {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    #mixing-div2 {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        margin-top: 2vh;
+    }
+}
+
+
+/* Clients section */
+#contact.section {
+    height: 10vh;
+}
+
+.clients-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 50vh;
+    width: 80vw;
+
+}
+
+.clients-slide {
+    margin: 10px;
+}
+
+.client-pics {
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+#clients.section {
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 990px) {
+    #clients.section {
+        min-height: 10vh;
+    }
+
+    .clients-carousel {
+        min-height: 30vh;
+    }
+}
+
+
+/* contact */
+.section-contact {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+@media only screen and (max-width: 990px) {
+    .section-contact {
+        max-height: 50vh;
+    }
+}
+    
