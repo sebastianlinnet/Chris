@@ -1,3 +1,11 @@
+//smooth scroll
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 700);
+    return false;
+});
+
 // fade effect
 const faders = document.querySelectorAll('.fade-in');
 
@@ -8,7 +16,7 @@ const scroller = new IntersectionObserver( entries => {
         })
     },
     {
-        threshold: 0.7
+        threshold: 0.5
     }
 )
 
@@ -22,7 +30,7 @@ $('.clients-carousel').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 1024,
