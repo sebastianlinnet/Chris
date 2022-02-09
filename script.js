@@ -24,6 +24,24 @@ faders.forEach(fade => {
     scroller.observe(fade);
 })
 
+//Fill headers bg
+const fillers = document.querySelectorAll('.section-header-fill');
+
+const header = new IntersectionObserver( entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle('load', entry.isIntersecting)
+            if (entry.isIntersecting) header.unobserve(entry.target)
+        })
+    },
+    {
+        threshold: 0.5
+    }
+)
+
+fillers.forEach(fade => {
+    header.observe(fade);
+})
+
 //clients carousell
 $('.clients-carousel').slick({
     dots: false,

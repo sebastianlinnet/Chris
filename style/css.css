@@ -9,7 +9,7 @@ h1, h2, h3, h3 {
     font-weight: 400;
 }
 
-#underline {
+.underline {
     letter-spacing: 10px;
 }
 
@@ -96,6 +96,33 @@ a:hover {
     padding-right: 5vw;
     background:rgb(14, 14, 19);
 }
+
+/* section fillers */
+/* .section-header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-header-fill {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.section-header-fill.load {
+    background:rgb(14, 14, 19);
+    animation: load 1s normal forwards;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  } */
+  /* section fillers slut */
 
 @media only screen and (max-width: 990px) {
     .section-header{
